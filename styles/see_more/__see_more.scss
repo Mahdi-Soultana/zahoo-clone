@@ -1,0 +1,139 @@
+.see_more {
+    position             : fixed;
+    width                : 100vw;
+    height               : 100vh;
+    display              : grid;
+    grid-template-columns: repeat(3, 1fr);
+    z-index              : 100;
+    top                  : 4.14rem;
+    left                 : 0;
+
+
+    main {
+        position        : relative;
+        padding-bottom  : 4rem;
+        background-color: aquamarine;
+        overflow-y      : scroll;
+        grid-column     : 1/-2;
+        background-color: rgb(231, 231, 231);
+        height          : 100%;
+        padding-top     : 4rem;
+
+        section {
+            border-bottom: 2px solid black;
+            width        : 100%;
+            min-height   : 160px;
+
+
+            div {
+                width                : 100%;
+                padding              : 1rem;
+                display              : grid;
+                grid-template-columns: 200px 1fr;
+                align-items          : baseline;
+
+                h3 {
+                    font-size     : 3rem;
+                    text-transform: uppercase;
+                    font-weight   : 300;
+                }
+            }
+        }
+
+        .zahoo p {
+            width: 80%;
+        }
+
+        .term p {
+            width: 300px;
+        }
+
+        .contact div {
+            p {
+                padding-top: .5rem;
+            }
+
+            div {
+                display              : grid;
+                grid-template-columns: 200px 1fr;
+
+                li {
+                    padding: .5rem 1rem;
+                }
+
+                >ul {
+                    display       : flex;
+                    justify-items : center;
+                    flex-direction: column;
+
+
+                    ul {
+                        display: flex;
+                    }
+                }
+            }
+        }
+
+        .clients div {
+            div {
+                display: flex;
+
+                ul {
+                    list-style-type: decimal;
+                }
+
+                h4 {
+                    margin-bottom: 2rem;
+                }
+
+                >article:first-child {
+                    margin-right: 2rem;
+                }
+            }
+        }
+
+        .credit div {
+            p:last-child {
+                margin-left: 3rem;
+                width      : 60%;
+            }
+        }
+
+        p,
+        li {
+            font-size     : 1.2rem;
+            font-weight   : 600;
+            text-transform: capitalize;
+
+        }
+    }
+
+    .overlay {
+        height: 100%;
+        width : 100%;
+    }
+
+
+
+}
+
+.close {
+    position   : absolute;
+    right      : 2rem;
+    top        : -1rem;
+    font-size  : 6rem;
+    color      : black;
+    font-weight: 200;
+}
+
+///interactive nav ee more via inut checkboox
+.close {
+    cursor: pointer;
+}
+
+#see_more {
+
+    &:checked~div {
+        display: block;
+    }
+}

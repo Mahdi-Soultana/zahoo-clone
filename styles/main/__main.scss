@@ -1,0 +1,84 @@
+body>main {
+    display              : grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top           : 4rem;
+    width                : 100vw;
+
+    @media screen and (max-width:750px) {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    @media screen and (max-width:550px) {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    article {
+        display           : grid;
+        grid-template-rows: 300px max-content;
+        grid-auto-rows    : 300px;
+
+        div {
+            position: relative;
+        }
+
+        h2 {
+            padding       : .5rem .5rem .5rem 3rem;
+            font-size     : 1.4rem;
+            text-transform: uppercase;
+            font-weight   : 500;
+            letter-spacing: 1px;
+        }
+    }
+}
+
+article:nth-of-type(1) div {
+    background-image: url("https://source.unsplash.com/random/400x600");
+}
+
+article:nth-of-type(2) div {
+    background-image: url("https://source.unsplash.com/random/452x600");
+}
+
+article:nth-of-type(3) div {
+    background-image: url("https://source.unsplash.com/random/453x600");
+}
+
+article:nth-of-type(4) div {
+    background-image: url("https://source.unsplash.com/random/454x600");
+}
+
+article:nth-of-type(5) div {
+    background-image: url("https://source.unsplash.com/random/450x601");
+}
+
+article:nth-of-type(6) div {
+    background-image: url("https://source.unsplash.com/random/451x602");
+}
+
+article:nth-of-type(7) div {
+    background-image: url("https://source.unsplash.com/random/451x603");
+}
+
+article:nth-of-type(8) div {
+    background-image: url("https://source.unsplash.com/random/451x604");
+}
+
+article:nth-of-type(9) div {
+    background-image: url("https://source.unsplash.com/random/451x605");
+}
+
+article:nth-of-type(10) div {
+    background-image: url("https://source.unsplash.com/random/451x606");
+}
+
+article:nth-of-type(11) div {
+    background-image: url("https://source.unsplash.com/random/450x605");
+}
+
+article:nth-of-type(12) div {
+    background-image: url("https://source.unsplash.com/random/450x609");
+}
+
+//animation articles

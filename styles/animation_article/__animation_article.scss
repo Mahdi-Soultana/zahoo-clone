@@ -1,0 +1,28 @@
+article {
+    div {
+        overflow     : hidden;
+        // transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    div:hover::after {
+        transition-delay: .26s;
+        transform       : translateY(-100%);
+    }
+
+    div::after {
+        transition      : .9s cubic-bezier(0.075, 0.82, 0.165, 1);
+        position        : absolute;
+        width           : 100%;
+        height          : 100%;
+        background-color: #fefefe;
+        top             : 0%;
+        left            : 0%;
+        content         : "";
+        z-index         : 10;
+        transform       : translateY(100%);
+    }
+
+    div::before {
+        position: absolute;
+    }
+}
