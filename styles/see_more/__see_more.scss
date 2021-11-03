@@ -19,6 +19,10 @@
         height          : 100%;
         padding-top     : 4rem;
 
+        @media(max-width:560px) {
+            grid-column: 1/-1;
+        }
+
         section {
             border-bottom: 2px solid black;
             width        : 100%;
@@ -30,7 +34,12 @@
                 padding              : 1rem;
                 display              : grid;
                 grid-template-columns: 200px 1fr;
-                align-items          : baseline;
+
+                @media(max-width:560px) {
+                    grid-template-columns: 1fr;
+                }
+
+                align-items : baseline;
 
                 h3 {
                     font-size     : 3rem;
@@ -124,6 +133,10 @@
     font-size  : 6rem;
     color      : black;
     font-weight: 200;
+
+    @media(max-width:560px) {
+        top: 2rem;
+    }
 }
 
 ///interactive nav ee more via inut checkboox
